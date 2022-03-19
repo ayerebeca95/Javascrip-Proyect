@@ -136,7 +136,7 @@ else {
    console.log("hola")
 }*/
 
-let entrada = prompt("ingresar Nombre");
+/*let entrada = prompt("ingresar Nombre");
 
 while(entrada != "ESC") {
     switch (entrada){
@@ -152,5 +152,24 @@ while(entrada != "ESC") {
     }
 
     entrada = prompt("Ingresar un Nombre");
+}*/
+
+let password = "";
+/*
+while (password != "hola") {
+    password = prompt("Introduzca su Contrseña")
 }
 
+console.log("Fin del bucle");*/
+
+/*do{
+    password = prompt("Introduzca su contraseña");
+}
+while(password != "hola")*/
+
+let y = 1;
+
+do {
+console.log("iteracion");
+y++;
+} while(y <= 4);
