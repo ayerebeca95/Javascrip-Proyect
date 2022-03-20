@@ -113,17 +113,34 @@ else {
     console.log(i); // SI PONGO alert(i); me apareceraa en la pagina
 }*/
 
-/*for(let i = 0; i < 20; i++){
-    let ingresarNombre = prompt("Ingresar nombre");
-    alert("Turno N°" +i+ " Nombre: "+ingresarNombre);
- }*/
 
- /*let constrasena = prompt("Ingresar su Contraseña");
+// En cada repeticion, calculamos el numero ingresado x el numero (i)
+
+/*let ingresarNumero = parseInt(prompt("Ingresar Numero"));
+for (let i = 1; i <= 10; i++){
+    let resultado = ingresarNumero * i ;
+    alert(ingresarNumero + " X " + i + " = " + resultado);
+} */
+
+
+
+//CICLOS CON FOR WHILE
+/*for(let i = 0; i < 1; i++){
+    let ingresarNombre = prompt("Nombre del paciente:");
+    alert("Turno N°" +i+ "  Nombre del paciente: "+ingresarNombre);
+ }
+
+ let constrasena = prompt("Ingresar su Contraseña");
 
  while(constrasena != "1234") {
      alert("El usuario ingresó una contraseña incorrecta");
      constrasena = prompt("Ingresar su contraseña");
  }*/
+
+ //CICLOS CON DO WHILE
+ //do{
+
+ //}while();
 
  /*let repetir = false;
 
@@ -154,22 +171,27 @@ while(entrada != "ESC") {
     entrada = prompt("Ingresar un Nombre");
 }*/
 
-let password = "";
-/*
+/*let password = "";
+
 while (password != "hola") {
     password = prompt("Introduzca su Contrseña")
 }
 
 console.log("Fin del bucle");*/
 
-/*do{
-    password = prompt("Introduzca su contraseña");
-}
-while(password != "hola")*/
 
-let y = 1;
-
+// Ciclos con 
+/*
+let numero = 0;
 do {
-console.log("iteracion");
-y++;
-} while(y <= 4);
+    numero = prompt("Ingresar Número");
+    console.log(numero);
+} while(parseInt(numero));*/
+
+ //let repetir = false;
+/*do{
+console.log("¡Solo una vez!");
+}while(repetir)
+while(repetir){
+  console.log("¡Solo una vez!");
+} */
