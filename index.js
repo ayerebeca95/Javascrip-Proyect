@@ -124,19 +124,6 @@ for (let i = 1; i <= 10; i++){
 
 
 
-//CICLOS CON FOR WHILE
-/*for(let i = 0; i < 1; i++){
-    let ingresarNombre = prompt("Nombre del paciente:");
-    alert("Turno N°" +i+ "  Nombre del paciente: "+ingresarNombre);
- }
-
- let constrasena = prompt("Ingresar su Contraseña");
-
- while(constrasena != "1234") {
-     alert("El usuario ingresó una contraseña incorrecta");
-     constrasena = prompt("Ingresar su contraseña");
- }*/
-
  //CICLOS CON DO WHILE
  //do{
 
@@ -188,10 +175,27 @@ do {
     console.log(numero);
 } while(parseInt(numero));*/
 
- //let repetir = false;
-/*do{
+
+
+// Ciclos con DO y WHILE
+ let repetir = false;
+do{
 console.log("¡Solo una vez!");
 }while(repetir)
 while(repetir){
   console.log("¡Solo una vez!");
-} */
+} 
+
+//CICLOS CON FOR WHILE
+for(let i = 0; i < 1; i++){
+    let ingresarNombre = prompt("Nombre del paciente:");
+    alert("Turno N°" +i+ "  Nombre del paciente: "+ingresarNombre);
+ }
+
+ let constrasena = prompt("Ingresar su Contraseña");
+
+ while(constrasena != "1234") {
+     alert("El usuario ingresó una contraseña incorrecta");
+     constrasena = prompt("Ingresar su contraseña");
+ }
+ console.log(prompt);
