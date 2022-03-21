@@ -178,7 +178,7 @@ do {
 
 
 // Ciclos con DO y WHILE
- let repetir = false;
+let repetir = false;
 do{
 console.log("¡Solo una vez!");
 }while(repetir)
@@ -198,4 +198,4 @@ for(let i = 0; i < 1; i++){
      alert("El usuario ingresó una contraseña incorrecta");
      constrasena = prompt("Ingresar su contraseña");
  }
- console.log(prompt);
+ 
