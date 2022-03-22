@@ -189,7 +189,7 @@ while(repetir){
 //CICLOS CON FOR WHILE
 for(let i = 0; i < 1; i++){
     let ingresarNombre = prompt("Nombre del paciente:");
-    alert("Turno N°" +i+ "  Nombre del paciente: "+ingresarNombre);
+    document.write("Turno N°" +i+ "  Nombre del paciente: "+ingresarNombre);
  }
 
  let constrasena = prompt("Ingresar su Contraseña");
