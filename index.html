@@ -6,43 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScrip-Proyect</title>
- 
+
   <!--Agregue name Description-->
   <meta name="description" content="Bodega-Desgustaciones">
- 
+
   <!--Agregue Keywords-->
   <meta name="keywords" content="Vinos, tipos de vinos, bodegas, desgustaciones">
- 
+
   <!--Imagen de Logo de arriba-->
-  <link rel="shortcut icon" href="./images/botellas.png">
- 
+  <link rel="shortcut icon" href="./images/logoo.png">
+
   <!--ANIMATE.CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- CSS BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
- 
+
   <!-- MI CSS-->
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <header>
-    <h2>SHIAZ</h2>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a> </li>
-        <li><a href="./pages/tiposdevinos.html">Tipos de vinos</a></li>
-        <li><a href="./pages/bodegas.html">Bodegas</a></li>
-        <li><a href="./pages/contactanos.html">Contáctanos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-    <h3>
-      Listas de pacientes 
-    </h3>
-  </section>
+  
+  <section class="fondo">
+    <header class="header">
+        <div class="headerLogo">
+            <a href="./index.html">
+                <img src="./images/logoo.png" alt="logo musica" width="">
+            </a>
+            <h3>HEALTH SHINE</h3>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li> <a href="./tiposdevinos.html">Turnos</a></li>
+                <li><a href="./degustaciones.html">Shop</a></li>
+                <li> <a href="./contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="form-register">
+        <h2>Formulario de Registro para Turnos</h2>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre Completo">
+        <input class="controls" type="text" name="turno" id="turno" placeholder="Turno(Ginecologo, Oculista, etc)">
+        <input class="controls" type="number" name="number" id="number" placeholder="$ precio del turno">
+        <p>Estoy de acuerdo con <a href="#"> Términos y condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="#">Ya tengo cuenta?</a></p>
+    </section>
+</section>
 
   <script src="index.js"></script>
 </body>
