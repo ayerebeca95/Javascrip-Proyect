@@ -20,10 +20,10 @@ class Persona{
     this.nombreCompleto = nombreCompleto;
     this.turno = turno;
     this.precio = precio;
-}
-hablar (){
-    console.log("Paciente: " + this.nombreCompleto + " " + "Turno: " +  this.turno + " " + "Costo: " + this.precio)
-}
+   }
+  hablar (){
+  console.log("Paciente: " + this.nombreCompleto + " " + "Turno: " +  this.turno + " " + "Costo: " + this.precio);
+ }
 }
 const persona1 = new Persona ("Rebeca Torres", "Oculista", 200);
 persona1.hablar();
