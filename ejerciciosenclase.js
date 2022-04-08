@@ -368,7 +368,534 @@ console.log(calculadora(10, 5, "*"));*/
     let precio = prompt("Costo del turno")
     document.write("Paciente registrado: " + nombreIngresado + "  "+ apellidoIngresado + " " +" " +  " Costo del turno: " + precio);   
     }
+     paciente();*/ /// Argumento
 
-    paciente();*/ /// Argumento
+
+    // AFTER CLAAS LUIS SALINAS, Objeto Literal
+
+   /* const persona = {
+        nombre: "Juan",
+        apellido: "perez",
+        edad: 40,
+        hijos: {
+            hijo1: {
+                nombre: "Roman",
+                apellido: "Perez",
+                edad: 10
+            },
+            hijo2: {
+                nombre: "Mariano",
+                apellido: "Perez",
+                edad: 15
+            }
+        }
+
+    }
+
+    console.log(persona.nombre);
+    console.log(persona.hijos.hijo2.edad);*/
+
+   /* let numero = 10;
+    let array = [10, 20, 30, 40]
+    console.log(array[1]);
+
+    function contadorCaracteres(cadena=""){
+        if(isNaN (cadena)){
+            let arrayCaracteres = cadena.split("")
+            let contadorCaracteres= cadena.length
+
+            console.log(arrayCaracteres);
+            console.log(contadorCaracteres);
+        }else {
+            console.log("No es un numero");
+        }
+    }
+
+    contadorCaracteres(javascript);*/
+
+    /*function repiteTexto (texto="", veces=0){
+        for (let i = 0; i < veces; i++){
+            console.log(texto)
+        }
+    }
+
+repiteTexto("Hola mundo", 3);
+repiteTexto("Vamos a seguir aprendiendo", 2);*/
 
 
+// PROBAMOS CARRITO
+
+/*class Bateria {
+    mAh;
+    marca;
+
+    constructor (mAh, marca) {
+        this.mAh = mAh;
+        this.marca = marca;
+    }
+}
+
+
+
+class Chip {
+    empresa;
+    numero;
+
+    constructor (empresa, numero){
+        this.empresa = empresa;
+        this.numero = numero;
+    }
+}
+
+ 
+class Smart {
+    modelo;
+    bateria;
+    nroChip;
+    chips;
+
+    constructor (modelo, cantMah, marcaBateria){
+        this.modelo = modelo;
+        this.bateria = new Bateria (cantMah, marcaBateria);
+        this.nroChip = 0;
+        this.chips = []
+    }
+  
+    agregarChip(chip){
+        if(this.nroChip < 3){// SI FUERA UN 2 EN VEZ DE 3 , ME APARECERÁ "NO SE PPUEDE AGREGAR MAS CHIPS"
+        this.chips.push(chip);
+        this.nroChip++;;
+        }else {
+            console.log("No se puede agregar mas chips");
+        }
+
+    }
+}
+
+let iphone = new Smart ("Iphone", 200, "Samsung");
+console.log(iphone);
+let entel = new Chip ( "Entel", "12345");
+let tole = new Chip ( "Tole", "99345");
+let tole1 = new Chip ( "Tole12", "99345");
+iphone.agregarChip(entel); 
+iphone.agregarChip(tole);
+iphone.agregarChip(tole1);
+console.log(iphone);
+*/
+
+/*let array = [ 1, 2, 3]
+array.push(22); Para agregar algun numro al final
+console.log(array[2]);*/
+
+/*let nombre = prompt ("Ingrese su Nombre");
+
+let usuario = prompt ("Ingrese su usuario")
+let contraseña = prompt ( "Ingrese su Contraseña");
+
+alert(`${nombre} Ponga sus datos por favor`)
+
+let user = "";
+let pass = "";
+let intentos = 3;
+
+function login (usuario, contrasenia, intentos){
+    if(!(usuario=== "" && contrasenia === "")){
+        while (intentos > 0 && (intentos !=0 && usuario !== user || contraseña !== pass )){
+
+       user = prompt("Ingrese su usuario");
+       pass = prompt("Ingrese su contraseña");
+       if (user == usuario && pass === contrasenia){
+           alert("Bienvenidos, acceso permitido")
+           
+       }else{
+           alert(`Usuario o contraseña incorrecta, te quedan ${intentos--} intentos`);
+       }
+
+        }
+    }
+}
+
+
+// PROBANDO CARRITO
+login (usuario, contraseña, intentos)*/
+
+/*class Articulo {
+    constructor (prenda, precio){
+        this.prenda = prenda;
+        this.precio = parseInt(precio);
+    }
+
+    precioTotal(){
+        return this.precio * 1.21;
+    }
+}
+
+const producto1 = new Articulo ("Camisa", 2000);
+const producto2 = new Articulo ("Pantalon", 3000);
+const producto3 = new Articulo ("Zapatillas", 9000);
+
+let ropaElegida = [
+    producto1,
+    producto2,
+    producto3
+]
+
+let nombre = prompt ("ingrese tu nombre para exoeriencia");
+let apellido = prompt ("ingrese tu apellido para mejor");
+
+let eleccion = prompt (
+    `Hola ${nombre}, bienvenido a la tienda:
+    Digite 1 para ${producto1.prenda}, precio ${producto1.precio}
+    Digite 2 para ${producto2.prenda}, precio ${producto2.precio}
+    Digite 3 para ${producto3.prenda}, precio ${producto3.precio}`
+)
+
+let total = 0;
+
+function eleccionDeRopa() {
+    while (eleccion != "NO"){
+        console.log(`${nombre}
+        tus prendas elegidas son ${ropaElegida[eleccion-1].prenda}`);
+       total += ropaElegida[eleccion-1].precioTotal();
+        eleccion = prompt (
+            `Hola ${nombre}, QUERES SEGUIR COMPRANDO? Elegí que ropa deseas comprar o de lo contrario digita NO:
+            Digite 1 para ${producto1.prenda}, precio ${producto1.precio}
+            Digite 2 para ${producto2.prenda}, precio ${producto2.precio}
+            Digite 3 para ${producto3.prenda}, precio ${producto3.precio}`
+        )
+        console.log(`total a pagar ${total}`)
+    }
+
+    eleccionDeRopa();
+
+    function pagar  (){
+        let formaPago = parseInt (prompt (`${nombre}, el monto a pagar es ${total}
+            1 para debito
+            2 para credito:`))
+        }
+
+        if(formaPago===1){
+            let pago = (`Ingresa el numero de la tarjeta: `);
+            let cuotas = parseInt(prompt`${nombre}, cuantas cuotas deseas?
+            1 para 3 cuotas con un recargo del 10%,
+            2 para 6 cuotas con un recargo de 15%,
+            3 para 12 cuotas con un recargo del 20%`);
+             let recargo = 0;
+             let cuota = 0;
+
+             switch(cuotas){
+                 case 1 : 
+                 recargo = total * 0.10;
+                 total+= recargo;
+
+                 alert(`${nombre}, tu pago fue existoso, gracias por comprar
+                 Detalles de la compra:
+                 Compra a nombre de ${nombre} ${apellido}
+                 Total abonado ${total}`);
+                 break;
+                 case 2 : 
+                 recargo = total * 0.15;
+                 total+= recargo;
+
+                 alert(`${nombre}, tu pago fue existoso, gracias por comprar
+                 Detalles de la compra:
+                 Compra a nombre de ${nombre} ${apellido}
+                 Total abonado ${total}`);
+                 break;
+             }
+            
+        
+    
+    }
+
+}
+
+eleccionDeRopa();*/
+
+
+// EJERCICIOS CLASE 4
+
+/*const arr1 = [1, true, false, "casa"];
+const nombres = ["pepito", "maria", "agostina"];*/
+
+/*const numero =  [1, 2, 3, 4, 5];
+console.log(numero[0]);
+console.log(numero[3]);*/
+
+/*const numero =  [1, 2, 3, 4, 5];
+for (let index = 0; index < 0; i++){
+    alert(numero[index]);
+}*/
+
+/*console.log("andres".length);*/
+
+/*const nombres = ["pepito", "maria", "agostina"];
+console.log(nombres.length);
+nombres.push("Luis");
+console.log(nombres);
+console.log(nombres.length);*/
+
+/*const nombres = ["pepito", "maria", "agostina"];
+nombres.splice(1, 3);// APARECE EL PRIMERO Y SEGUNDO
+console.log(nombres);*/
+
+/*const nombres = ["pepito", "maria", "agostina", "Juan"];
+console.log(nomrbes.join (","));
+
+console.log(nombres.join("*"));*/
+
+/*const perros = ["Pupy", "Ronnie"]
+const gatos = ["Mishi", "Garfield", "Zuri"]
+const mascotas = perros.concat(gatos);
+console.log(mascotas);*/
+
+/*const nombres = ["pepito", "maria", "agostina", "Juan"];
+const masculinos = nombres.slice(1, 3);
+console.log(masculinos);*/// RECORTA PERO SIMPRE UNA MENOS ANTES DE LLEGAAR
+
+/*const nombres = ["pepito", "Pedro", "agostina", "Juan"];
+let nombre = prompt ("ingrese la persona que se va a ir");
+
+const index = nombres.indexOf(nombre);
+const invitacionActivos = nombres.splice(index, index);
+console.log(nombres);*/
+
+/*const nombres = ["pepito", "Pedro", "agostina", "Juan"];
+let nombre = prompt ("ingrese la persona que se va a ir");
+
+if(nombres.includes("Rita")){
+
+}*/
+
+/*const listaNombres = [];// en la pagina en consola me aparecera el numero uno por uno de cada nombre 
+let cantidad = 5;
+
+do {
+let entrada = prompt ("Ingresar nomrbe");
+listaNombres.push(entrada.toUpperCase());
+console.log(listaNombres.length);
+}while(listaNombres.length != cantidad)
+const nuevaLista = listaNombres.concat(["ana", "ema"]);
+alert(nuevaLista.join("\n")); // si pongo /n me saldra al final de los 5 nombres escritos uno debajo de otros 
+*/
+
+// ARREGLOS CON OBJETOS
+/*const productos = [
+    {nombre: "camara", precio: 1233},
+    {nombre: "television", precio: 1233},
+    {nombre: "celular", precio: 1233}
+];
+
+//console.log(productos);
+
+for (const producto of productos){ // Agarra los productos del anterior y aparecera uno debajo del otro
+    console.log(producto.nombre);
+    console.log(producto.precio);
+}*/
+
+/*class Producto {
+    constructor(nombre, precio){
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.vendido = false;
+    }
+    sumaIva()
+}*/
+
+/*function mayorQue(n){
+    return (m) => m > n 
+}
+
+let mayorQueDiez = mayorQue (10)
+
+console.log(mayorQueDiez(12))
+console.log(mayorQueDiez(8))*/
+
+
+// RETORNAR FUNCIONES
+/*function asignarOperacion (op) {
+    if (op == "sumar"){
+        return (a, b) => a + b 
+    }else if (op == "restar"){
+        return (a, b) => a - b
+    }
+}
+
+let suma = asignarOperacion("sumar")
+let resta = asignarOperacion("restar")
+
+console.log(suma(5,2));
+console.log(resta (5, 2));*/
+
+// RECIBIR FUNCIONES POR PARAMENTROS
+
+/*function porCadaUno (arr, fn){ // EL arr reemplaza el numeros y el fn reemplaza el console.log
+ for ( const el of arr){
+        fn (el);
+    }
+}
+
+const numeros = [ 1, 2, 3, 4];
+porCadaUno (numeros, console.log);*/
+
+// MULTIPLICANDOLO
+/*function multiplicar (x){
+    console.log(x*2);
+}
+
+function porCadaUno (arr, fn){ // EL arr reemplaza el numeros y el fn reemplaza el console.log
+    for ( const el of arr){
+           fn (el);
+       }
+   }
+   
+   const numeros = [ 1, 2, 3, 4];
+   porCadaUno (numeros, multiplicar);*/
+
+   /*const numeros = [ 1, 2, 3, 4];
+   numeros.forEach((num)=> {
+       console.log(num);
+   })*/
+
+
+   // METODO FIND
+  /* const cursos = [
+       {nombre: "Javascript", precio: 1500},
+       {nombre: "React Js", precio: 2800}
+   ]
+
+   const resultado = cursos.find((el) => el.nombre === "React Js")
+   console.log(resultado);   // encuentra el resultado que busco*/
+// CUANDO ULTILIZAMOS EL SOME HACE TRUE O FALSE TE DICE SI EXISTE O NO 
+
+// METODO FILTER
+
+/*let personas =[
+{nombre: "aye", edad: 27},
+{nombre: "Roman", edad: 22},
+{nombre: "lisa", edad: 15}
+]
+
+console.log(personas.filter(x=> x.edad < 18));*/// aparece los nombres que sean menores de 18
+
+
+/*let productos = [
+    {nombre: "camisa", activo: true},
+    {nombre: "blusa", activo: false},
+    {nombre: "correa", activo: true}
+]
+console.log(productos.filter(x => x.activo === false));*/// mostrara quienes estan disponibles o no en false o true
+
+/*const nombres = [ "rita", "Pedro", "miguel", "ana", "vanesa" ]
+let nombre =  prompt("ingrese el nombre de la perosna que se retira");
+/*const index = nombres.indexOf(nombre);
+const invitados = nombres.splice(index, index);
+console.log(nombres);*/
+
+/*if (nombres.includes("rita")){
+    const index = nombres.indexOf(nombre);
+const invitados = nombres.splice(index, index);
+console.log(nombres);
+}else {
+    console.log("donde se encuentra");
+}*/
+
+/*const cursos = [
+    {nombre: "Javascript", precio: 1500},
+    {nombre: "React Js", precio: 2800},
+    {nombre: "Angular Js", precio: 2800},
+    {nombre: "Desarrollo web", precio: 2800}
+
+]
+
+const nombres = cursos.map((el) => el.precio);
+console.log(nombres);*/   // encuentra el resultado que busco de todos
+
+/*const numeros = [ 1, 2, 3, 4, 5, 6]
+const total = numeros.reduce((acumulador, elemento) => acumulador + elemento, 0)
+console.log(total);*/
+
+
+/*const productos = [
+    {id: 1, nombre:"Arroz", precio: 1500},
+    {id: 2, nombre:"Fideo", precio: 2800},
+    {id: 3, nombre:"Pan", precio: 2800},
+    {id: 4, nombre:"Flan", precio: 2800}
+
+]
+
+const buscando = productos.find(producto => producto.id === 3)
+console.log(buscando)
+
+const existe = productos.some(producto => producto.nombre === "Harina")
+console.log(existe)
+
+const baratos = productos.filter(producto => producto.precio < 100)
+console.log(baratos)
+
+
+const listaNombres = productos.map(producto => producto.nombre)
+console.log(listaNombres);*/
+
+
+// AFTER CLASS 6/4 . Map, some
+
+/*let info = [
+    {nombre: "cafe", precio: 1200, disponible: true},
+    {nombre: "pan", precio: 5200,  disponible: false},
+    {nombre: "leche", precio: 400,  disponible: true}
+]
+
+let result = info.filter(x => x.nombre == "cafe")
+console.log(result);
+
+console.log(info.map(x => x.precio));
+
+let productosDis = info.filter(x => x.disponible === true)
+console.log(productosDis);*/
+
+/*class Producto {
+    constructor (id, nombre, precio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+}
+
+let productoVirtuales = [];
+
+for (let i =0; i < 2; i++){
+    let id = prompt ("ingrese id");
+    let nombre= prompt ("ingrese id");
+    let precio= prompt ("ingrese id");
+
+    productoVirtuales.push(new Producto (id, nombre, precio));
+}
+
+[{nombre:"1234", id: 5}, {nombre: "123451234", id: 6}]
+
+function eliminarProducto(id){
+    let index = productoVirtuales.indexOf(productoVirtuales.find (x => x.id === id))
+    productoVirtuales.splice(index, 1);
+}
+
+eliminarProducto(6);*/
+
+/*let servicios = [
+    {servicio: "agua", precio: 1050} ,
+    {servicio: "luz", precio: 2550} ,
+    {servicio: "comida", precio: 4150} 
+    
+]
+
+console.log(servicios.filter(s => s.servicio.includes("agua")).map(x => x.precio));
+*/
+
+/*const inicio = new Date ()
+
+for (let i = 0; i < 1000; i++) {
+    console.log("haciendo tiempo")
+}
+const final = new Date ()
+
+console.log("El proceso tardó: " + (final - inicio) + "milisegundos");*/
