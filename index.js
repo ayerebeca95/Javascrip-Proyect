@@ -29,10 +29,12 @@ const persona1 = new Persona ("Rebeca Torres", "Oculista", 200);
 persona1.hablar();*/
 
 
+
 // TERCER DESAFIO DOS ENGREGAS // EN MI PARTE SHOP DE LA PAGINA
+
 /* Consola, en mi pagina cree una nav que dice SHOP y dentro contiene 
  algunos de estos productos de rehabilitacion o medicamentos*/
-let productos = [
+/*let productos = [
     {nombre: "Cuello Ortopédico", activo: true, precio: 1050},
     {nombre: "Bota Ortopédica", activo: false, precio: 2250},
     {nombre: "Gotas Ojos", activo: true, precio: 3152},
@@ -45,17 +47,10 @@ let productos = [
 console.log(productos.filter(n => n.nombre.includes("Paracetamol")).map(x => x.activo));
 console.log(productos.length);
 
-const inicio = new Date ("25 Diciembre 2022")
-
-for (let i = 0; i < 1; i++) {
-    console.log("haciendo tiempo")
-}
-const final = new Date ("26 Diciembre 2022")
-
-console.log("El proceso tardó: " + (final - inicio) + "milisegundos");
+*/
 
 // Pagina
-const listaPacientes = [];// en la pagina en consola me aparecera el numero uno por uno de cada nombre 
+/*const listaPacientes = [];// en la pagina en consola me aparecera el numero uno por uno de cada nombre 
 let cantidad = 5;
 
  do {
@@ -65,4 +60,23 @@ let cantidad = 5;
   }while(listaPacientes.length != cantidad)
  const nuevaLista = listaPacientes.concat(["Ana Paz", "Ema Robing"]); // AGREGO ESTOS DOS NOMBRES AL FINAL
  alert(nuevaLista.join("\n")); // si pongo /n me saldra al final de los 5 nombres escritos uno debajo de otros 
+*/
 
+
+
+// ENTREGA DOBLE
+let btn  = document.getElementsByName ("btn");
+btn.addEventListener("Añadir a carrito", respuesta);
+
+
+
+
+
+function respuesta (){
+   alert("Producto agregado");
+   setTimeout(() => {// setTimeout es una funcion que toma una espera antes de ejecutar
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "Bienvenidos a nuestro Hospital";
+      document.body.append(h1);
+  }, 1000)
+}

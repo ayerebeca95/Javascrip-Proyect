@@ -315,3 +315,14 @@ footer {
       background: #b5dac4;
       color: #141d14; }
     
+  /* SHOP*/
+
+  .description {
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+
+  .description:hover {
+    height: 80px;
+  }

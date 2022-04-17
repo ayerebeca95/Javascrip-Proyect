@@ -899,3 +899,183 @@ for (let i = 0; i < 1000; i++) {
 const final = new Date ()
 
 console.log("El proceso tardó: " + (final - inicio) + "milisegundos");*/
+/*const inicio = new Date ("25 Diciembre 2022")
+
+for (let i = 0; i < 1; i++) {
+    console.log("haciendo tiempo")
+}
+const final = new Date ("26 Diciembre 2022")
+console.log("El proceso tardó: " + (final - inicio) + "milisegundos");*/
+
+
+// CLASE 5 
+
+/*let div = document.getElementById("app"); // compilando con html
+console.log(div.innerHTML); // muestra lo que el din tiene por dentro*/
+
+/*let parrafo = document.getElementById("parrafo");
+console.log(parrafo.innerHTML);
+console.log(parrafo.innerText);*/
+
+/*let perritos = document.getElementsByClassName("perritos");
+for ( const  perrito of perritos){
+    console.log(perrito);
+}*/
+
+/*let contenedores = document.getElementsByTagName("div");
+console.log(contenedores[0].innerHTML);*/
+
+/*let h1 = document.getElementById("identificador");
+h1.innerHTML = "<h2> hola <p>a todos<p> </h2>"
+*/
+/*setTimeout(() => {
+    h1.innerText = "hola mundo"
+}, 2000); // cambia en dos segundos de hola a todos a hola mundo
+*/
+
+/*
+1. creamos el nodo 
+2. insertamos la info del nodo
+3. Añadir un padre
+
+let nombre = "aye";
+let parrafo = document.createElement("p");
+parrafo.innerHTML = `<h1>hola ${nombre}  </h1>`;
+document.body.apeend(parrafo); // se agrega al final
+parrafo.className = "saludo"*/
+
+//parrafo.remove(); para borrar
+
+/*let padre = document.getElementById("padre");
+let personas = [ "homero", "marge", "bart"];
+for (const persona of personas){
+    let li = document.createElement ("li");
+    li.innerHTML = persona;
+    padre.append(li);// se agregan prepend arriba me pone los li
+
+}
+*/
+
+/*let btn  = document.getElementsByName ("btn");
+btn.addEventListener("Añadir a carrito", respuesta);
+
+
+
+
+
+function respuesta (){
+   alert("Producto agregado");
+   setTimeout(() => {// setTimeout es una funcion que toma una espera antes de ejecutar
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "Bienvenidos a nuestro Hospital";
+      document.body.append(h1);
+  }, 1000)
+}*/
+
+//Con solo presionar el mouse ya se esta ejecutando
+/*let boton = document.getElementById("eventos");
+boton.addEventListener("mousedown", () => {
+    console.log("evento mousedown");
+});*/
+
+/*boton.addEventListener("mouseup", () => {
+    console.log("evento mouseup");
+});*/
+
+/*boton.addEventListener("mousemove", () => { // y el mouseover es para cuando se mueve el mouse sobre el elemento
+    console.log("evento mousemove"); // hace que con tan solo apoyar mi mouse me marque cuantas veces este sobre el elemento mousemove
+}) // mouseout me marca cuando apoyo el mouse y salgo del elemento
+*/
+
+// Eventos del teclado
+/*let input1 = document.getElementById("nombre");
+let input2 = document.getElementById("edad");
+input1.onkeyup = () => {console.log("keyUp")}; // cuando se presiona la tecla y cuando la suelto se marca
+input2.onkeydown = () => {console.log("keyDown")}; // con solo presionarlo 
+*/
+
+// Onchange - es cuando completas y entras a la otra , ejecuta
+/*let input1 = document.getElementById("nombre");
+let input2 = document.getElementById("edad");
+input1.onchange = () => {console.log("valor1")}; 
+input2.onchange = () => {console.log("volor2")}; */
+
+
+// Evento input agrega lo que escribis 
+/*let input1 = document.getElementById("nombre");
+input1.addEventListener( `input `, () => {  
+    console.log(input1.value)
+})*/
+
+
+// interactuando los formularios con la consola una vez que pongo enviar
+/*let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario (e){
+    e.preventDefault();
+    console.log("Formulario enviado");
+}*/
+
+// Trae la informacion del formulario
+/*let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e) {
+    e.preventDefault ();
+    let formulario = e.target
+    console.log(formulario);
+    console.log(formulario.children[0].value);
+    console.log(formulario.children[1].value);
+}*/
+
+/*
+console.log(document.getElementsByTagName("li"));
+console.log(document.getElementById("formulario"));
+console.log(document.getElementsByClassName("bioPrincipal"));
+console.log(document.querySelectorAll("a"));
+document.querySelectorAll("a").forEach(el => console.log(el));
+console.log(document.querySelectorAll("#header li"));
+*/
+
+// CLASE 6 PROFE
+
+/*localStorage.setItem("nombre", "aye"); // setItem es para guardar
+let numero = localStorage.getItem("valor", 5);
+
+localStorage.setItem("nombre", "aye"); // getItem para obtener
+let nombre = localStorage.getItem("nombre");
+
+console.log(nombre);
+console.log(typeof(numero));*/
+
+//sessionStorage
+/*localStorage.setItem("nombre1", "aye");
+localStorage.setItem("nombre2", "mariano");
+localStorage.setItem("nombre3", "ana");
+localStorage.setItem("nombre4", "cesia");
+localStorage.setItem("nombre5", "lea"); // localStorage.removeItem
+console.log(localStorage.key(1));
+
+for(let i= 0; i < localStorage.length; i++){ // le estoy diciendo que recorra uno por uno
+    let clave = localStorage.key(i);
+
+    console.log("clave" + clave + "valor: " + localStorage.getItem(clave));
+}
+*/
+//console.log(sessionStorage.apellido);
+//console.log(sessionStorage["apellido"]);
+
+// JSON es un string , almacena en el localStorage objetos, etc
+
+/*localStorage.setItem("arreglo", JSON.stringify([1,2,3]));
+let arreglo = localStorage.getItem("arreglo");
+console.log(JSON.parse(arreglo));*/
+
+/*localStorage.setItem("objet",JSON.stringify({nombre:"juan", edad: 12}));
+let objet = localStorage.getItem("objet");
+console.log(JSON.parse(objet).nombre);*/
+
+
+
+
