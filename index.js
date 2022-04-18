@@ -64,7 +64,7 @@ let cantidad = 5;
 
 
 
-// ENTREGA DOBLE
+// ENTREGA DOBLE  16/4
 let btn  = document.getElementsByName ("btn");
 btn.addEventListener("Añadir a carrito", respuesta);
 
