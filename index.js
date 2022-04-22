@@ -65,7 +65,7 @@ let cantidad = 5;
 
 
 // ENTREGA DOBLE  16/4
-let btn  = document.getElementsByName ("btn");
+/*let btn  = document.getElementsByName ("btn");
 btn.addEventListener("Añadir a carrito", respuesta);
 
 
@@ -79,4 +79,8 @@ function respuesta (){
       h1.innerHTML = "Bienvenidos a nuestro Hospital";
       document.body.append(h1);
   }, 1000)
-}
+}*/
+
+
+
+
