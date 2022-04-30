@@ -1077,5 +1077,67 @@ let objet = localStorage.getItem("objet");
 console.log(JSON.parse(objet).nombre);*/
 
 
+// CLASE 7 . OPERADORES AVANZADOS Y LIBRERIAS
+
+// Para optimizar codigo 
+ 
+/*let num = 10;
+num = num + 1;
+num += 1;
+num++; // La mas usada
+console.log(num);*/
 
 
+/*let temperatura = 25;
+
+if (temperatura > 21){
+    console.log("hace calor");
+}else{
+    console.log("no hace mucho calor");
+}*/
+ // Operador ternario condicion ? caso 1 : caso2
+
+ //temperatura > 21 ? console.log("hace calor") : console.log("hace frio");;
+
+/* const usuario = {
+     nombre: "octavio",
+     edad: 18
+ };
+
+ const permiso = usuario.edad >= 18 ? true : false;
+
+ permiso ? console.log("puedes entrar") : console.log("no puedes entrar");;
+ */
+
+ /*const carrito = []
+
+ if (carrito.length === 0) {
+     console.log("el carrito esta vacio");
+ }
+
+ carrito.length === 0 && console.log("el carrito esta vacio");*/
+
+ /*const usuario = {
+    nombre: "octavio",
+    edad: 18
+};
+
+const registroIngreso = usuario.edad >= 18 && new Date;
+
+console.log(registroIngreso);*/
+
+/*
+condicion1 || condicion2  el || es el mas utilizado
+si condicion1 es diferente de 0, null, NaN, false o string vacio retorna condicion2
+*/
+/*console.log(0 || "valor");// valor
+console.log(40 || "valor"); // 40*/
+
+/*const usuario1 = {
+    nombre: "John",
+    edad: 14
+}
+
+const usuario2 = null;
+console.log(usuario1 || "el usuario no existe");
+console.log(usuario2 || "el usuario no existe");*/
