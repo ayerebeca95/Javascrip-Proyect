@@ -82,5 +82,5 @@ function respuesta (){
 }*/
 
 
-
-
+let mensaje = "desde hoy hay un nuevo aprendizaje";
+console.log(mensaje);

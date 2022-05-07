@@ -1,14 +1,24 @@
+// SINCRONIA 
+/*console.log("primero");
+
+setTimeout(() => {
+    console.log("entrga");
+}, 1000);
+
+console.log("actividades");
+
 /*for (let letra of "hola"){
     setTimeout(() => {
         console.log(letra)
     }, 1000)
 }
-
-for (let letra of "mundo"){
+*/
+/*for (let letra of "mundo"){
     setTimeout(() => {
         console.log(letra)
     }, 3000)
 }*/
+
 
 /*setInterval(() => { // INTERVAL SE REPITE Y REPITE LO DEL LOG
     console.log("hola")
@@ -38,13 +48,18 @@ const fin = setTimeout(() =>{
 
 clearTimeout(fin);*/
 
+
+
 /*const eventoFuturo = (validacion) => {
     return new Promise((resolve, reject) => {
-setTimeoutv(() => {
+setTimeout(() => {
     res ? resolve ('promesa resuelta') : reject('promesa rechaza')
 }, 2000)
     })
-}
+} 
+
+//console.log(eventoFuturo(false))
+//console.log(eventoFuturo(true))
 
 eventoFuturo(true).then((respuesta)=> {
     console.log(respuesta); // then es cuando se que hay una respuesta
@@ -87,3 +102,15 @@ fetch('https://jsonplaceholder.typidecode.com/posts/')
         
     });
 })*/
+
+// CALL BACK , es la accion que no ocurre al mismo tiempo 
+/*const mensaje = function() {  
+    alert("Este mensaje se muestra después de 3 segundos");
+}
+setTimeout(mensaje, 3000);*/
+
+/*
+setTimeout(() => { 
+    console.log("Este mensaje se muestra después de 3 segundos");
+}, 3000);*/
+

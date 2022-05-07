@@ -11,9 +11,10 @@ Clickbutton.forEach(btn => {
         text: "Se añadió al carrito",
         icon: "success",
         confirmButtonText: "Cool",
-      })
-    });
+      }) 
 
+      
+    }) ;
 })
 
 
@@ -119,4 +120,6 @@ function sumaCantidad(e) {
   console.log(carrito);
 }
 
+let mensaje = "hola mundo";
+console.log(mensaje);
 
